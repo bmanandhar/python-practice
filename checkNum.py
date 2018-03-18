@@ -30,6 +30,6 @@ def CheckNums(num1,num2):
     return x
     
 # keep this function call here  
-print (CheckNums(4, 7)) == 'true'   
-print (CheckNums(9, 1)) == 'false' 
-print (CheckNums(5, 5)) == -1 
+print (CheckNums(4, 7) == 'true')   
+print (CheckNums(9, 1) == 'false') 
+print (CheckNums(5, 5) == -1) 
