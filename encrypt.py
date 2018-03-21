@@ -48,4 +48,33 @@ def encrypt(str):
     return temp
 print(encrypt("aabbccc"))
 
+'''
+another example
+'''
+
+def encrypt(str):
+    
+    str = list(str + " ")
+    
+    temp = ""
+    char, final = [], []
+
+    for i in range(len(str) -1):
+        temp += str[i]
+
+        if i > 0:
+            if str[i +1] != str[i]:
+
+                char.append(temp[0])
+                char.append(len(temp))
+                final.append(char)
+                char = []
+                temp = ""                             
+
+    return final
+    
+print(encrypt("aaabbcdd") == [['a', 3], ['b', 2], ['c', 1], ['d', 2]])
+print(encrypt("aaaaaaaaaa") == [['a', 10]])
+
+
 
