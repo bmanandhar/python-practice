@@ -22,11 +22,11 @@ def most_freq(list):
             count[i] = 1
         else:
             count[i] += 1
-            if count[i] > max_count:
-                max_count = count[i]
-                max_item = i
+        if count[i] > max_count:
+            max_count = count[i]
+            max_item = i
     print(count)
                 
     return 'Most frequent: {} \nFrequency: {}'.format(max_item, max_count)
 
-print(most_freq([1,1,2,3,3,3,1,1]))
+print(most_freq([1,3,3,1,2,3,3,3,1,1]))
