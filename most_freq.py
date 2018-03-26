@@ -25,6 +25,7 @@ def most_freq(list):
             if count[i] > max_count:
                 max_count = count[i]
                 max_item = i
+    print(count)
                 
     return 'Most frequent: {} \nFrequency: {}'.format(max_item, max_count)
 
