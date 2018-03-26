@@ -18,10 +18,8 @@ def rec_intersection(rect1, rect2):
     
     if x_min > x_max:
         return None
-    
-    else: return [[x_min, y_min], [x_max, y_max]] 
+    return [[x_min, y_min], [x_max, y_max]] 
 
-    
 print("Test for rec intersection")
 print(rec_intersection([[0, 0], [2, 1]], [[1, 0], [3, 1]]) == [[1, 0], [2, 1]])
 print(rec_intersection([[1, 1], [2, 2]], [[0, 0], [5, 5]]) == [[1, 1], [2, 2]])
