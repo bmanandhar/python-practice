@@ -5,6 +5,7 @@ Created on Sun Mar 25 13:54:14 2018
 
 @author: bijayamanandhar
 """
+#Function 1:
 
 def remove_nth_letter(string, n):
     
@@ -17,7 +18,6 @@ def remove_nth_letter(string, n):
 
 print(remove_nth_letter('abcXdef', 3) == 'abcdef')
 
-
 #Function 2:
 
 def remove_nth_letter(string, n):
@@ -25,3 +25,14 @@ def remove_nth_letter(string, n):
     return string[:n]+string[n+1:]
 
 print(remove_nth_letter('abcXdef', 3))
+
+#Function 3:
+
+def remove_nth_letter(string, n):
+    
+    x = list(string)
+    x.remove(string[n])
+    return ''.join(x)
+
+print(remove_nth_letter('abcXdef', 3))
+
