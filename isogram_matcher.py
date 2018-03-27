@@ -32,13 +32,10 @@ def isogram_matcher(word1, word2):
     return [x, y]
 print(isogram_matcher("ultrasonic", "ostracized"))
 
-'''
-#print(isogram_matcher("ultrasonic", "ostracized"))
-# print isogram_matcher("an", "at") == [1, 0]
-print isogram_matcher("cat", "car") == [2, 0]
-print isogram_matcher("cat", "tap") == [1,1]
-# puts isogram_matcher("home", "dome") == [3, 0]
-# puts isogram_matcher("gains", "snake") == [0, 3]
 
-print isogram_matcher("ultrasonic", "ostracized") == [3, 4]
-'''
+print (isogram_matcher("an", "at") == [1, 0])
+print (isogram_matcher("cat", "car") == [2, 0])
+print (isogram_matcher("cat", "tap") == [1,1])
+print (isogram_matcher("home", "dome") == [3, 0])
+print (isogram_matcher("gains", "snake") == [0, 3])
+print (isogram_matcher("ultrasonic", "ostracized") == [3, 4])
