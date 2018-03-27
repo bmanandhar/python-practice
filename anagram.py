@@ -14,6 +14,7 @@ anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
 anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
 anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 """
+'''
 def anagrams(word, words):
     #your code here
     array = []
@@ -31,11 +32,13 @@ def anagrams(word, words):
 print(anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']), ['carer', 'racer'])
 print(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']), ['aabb', 'bbaa'])
 print(anagrams('laser', ['lazing', 'lazy',  'lacer']), [])     
+'''
+def anagrams(word1, word2): 
+    
+    if sorted(word1) == sorted(word2):
+        return '"{}" and "{}" are bigrams to each other'.format(word1, word2)
+    else:
+        return False
+print(anagrams('abcd', 'dcab'))
+print(anagrams('abcd', 'dca'))
 
-a = ['2','3','1']
-a.sort()
-print(a)
-
-b = ['2', '4', '5']
-c = sorted(b)
-print(c)
