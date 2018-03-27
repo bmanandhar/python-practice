@@ -36,7 +36,7 @@ print(anagrams('laser', ['lazing', 'lazy',  'lacer']), [])
 def anagrams(word1, word2): 
     
     if sorted(word1) == sorted(word2):
-        return '"{}" and "{}" are bigrams to each other'.format(word1, word2)
+        return '"{}" and "{}" are anagrams to each other'.format(word1, word2)
     else:
         return False
 print(anagrams('abcd', 'dcab'))
