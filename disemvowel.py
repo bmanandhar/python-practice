@@ -25,7 +25,8 @@ print(disemvowel('America'))
 def disemvowel(text):
     x = ''
     for i in text:
-        if i not in 'aAeEiIoOuU':
+        i = i.lower()
+        if i not in 'aeiou':
             x += i
     return x
 print(disemvowel('United States of America'))
