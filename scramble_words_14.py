@@ -11,14 +11,14 @@ def scramble_string(string, positions):
     for i in range(len(positions)):
         result += string[positions[i]]
     return result
-print(scramble_string('ebdcaf', [4, 1, 3, 2, 0, 5]))    
+print(scramble_string('ebdcaf', [4, 1, 3, 2, 0, 5]))
 
 """ for while loop """
 
 def scramble_string(string, positions):
-    
+
     result = ''
-    
+
     i = 0
     while i < len(string):
         result += string[positions[i]]
@@ -26,6 +26,20 @@ def scramble_string(string, positions):
 
     return result
 print(scramble_string('ebdcaf', [4, 1, 3, 2, 0, 5]))
+
+# function-2:
+
+import random
+def scramble_string(string):
+    x = ''
+    y = len(string)
+    ind = random.sample(range(y), y)
+
+    for i in range(y):
+        x += string[ind[i]]
+    return x
+
+print(scramble_string('abcd'))
 
 '''
 def scramble_string(string, positions)
