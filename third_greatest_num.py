@@ -6,9 +6,9 @@ This is a temporary script file.
 """
 
 def third_greatest_num(num_list):
-    
+
     num_list.sort()
-    
+
     return num_list[-3]
 
 print("-------------------------")
@@ -16,25 +16,23 @@ print(third_greatest_num([2, 5, 1, 6, -3]) == 2)
 print(third_greatest_num([0, -9, 9, 4,1]) == 1)
 print("-------------------------")
 
-#This line being added for test 
+#This line being added for test
 #======
 def third(numList):
 
-    x = None
     i, ii, iii = None, None, None
 
-    for j in range(len(numList)):
-        x = numList[j]
-    
+    for x in numList:
+
         if i == None or x > i:
             iii, ii, i = ii, i, x
-        
+
         elif ii == None or x > ii:
             iii, ii = ii, x
-        
+
         elif iii == None or x > iii:
             iii = x
-        
+
     return iii
 
 print('   --------------    ')
