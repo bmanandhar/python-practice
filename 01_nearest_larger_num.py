@@ -7,21 +7,21 @@ Created on Sat Mar 17 09:18:34 2018
 """
 
 def nearest_larger(arr, idx):
-    
+
     if max(arr) == arr[idx]:
         return None
-        
+
     diff = 1
-    
-    for i in range(len(arr) -1):        
-        right, left = idx + diff, idx - diff
-        
-        if (left >= 0) and (arr[left] > arr[idx]):
+
+    for i in range(len(arr) -1):
+        left, right = idx - diff, idx + diff
+
+        if left >= 0 and arr[left] > arr[idx]:
             return left
-            
-        elif (right <= len(arr)) and (arr[right] > arr[idx]):
+
+        elif right <= len(arr) and arr[right] > arr[idx]:
             return right
-            
+
         diff += 1
 
 print("Tests for nearest larger int in arr")
