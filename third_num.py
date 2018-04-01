@@ -20,4 +20,4 @@ def third_num(num):
             iii = num[x]
         
     return iii
-print(third_num([4,8,5,7])) 
+print(third_num([4,8,5,7]) == 5) 
