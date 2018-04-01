@@ -19,7 +19,7 @@ def dup(num_list): #helper function
             chk_list.append(i)
         else:
             counter += 1
-    return len(chk_list) == len(num_list) #reurns True if it has no repeated digit
+    return len(chk_list) == len(num_list) #returns True if it has no repeated digit
         
 def no_repeats(start, end):
     no_repeats = [] #accumulates items having no repeat
