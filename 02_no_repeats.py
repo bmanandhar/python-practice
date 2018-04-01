@@ -11,9 +11,10 @@ Created on Sat Mar 17 09:27:34 2018
 # no_repeats using a helper function :
 
 def dup(num_list): #helper function
+    
     counter = 0 #counter to count if elements repeat    
-
     chk_list = [] #stores elements for checking occurances
+
     for i in num_list:
         if i not in chk_list:
             chk_list.append(i)
@@ -22,6 +23,7 @@ def dup(num_list): #helper function
     return len(chk_list) == len(num_list) #returns True if it has no repeated digit
         
 def no_repeats(start, end): #main function
+
     no_repeats = [] #accumulates items having no repeat
     
     for i in range(start, end + 1): #takes each item from start to end
