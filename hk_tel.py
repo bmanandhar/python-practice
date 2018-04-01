@@ -11,4 +11,7 @@ def hk_tel(n):
         return True
     else:
         return False
-print(hk_tel('1234 5678'))
+print(hk_tel('1234 5678') == True)
+print(hk_tel('1234 5#78') == False)
+print(hk_tel('365416578') == False)             
+             
