@@ -30,7 +30,9 @@ def no_repeats(start, end):
             no_repeats.append(i)
     return no_repeats
 
-print(no_repeats(1987, 2018))
+print(no_repeats(1987, 2018) == [1987, 2013, 2014, 2015, 2016, 2017, 2018])
+# should return:
+# [1987, 2013, 2014, 2015, 2016, 2017, 2018]
 
 #----------------------------------
 
