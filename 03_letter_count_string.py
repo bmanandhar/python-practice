@@ -13,6 +13,19 @@ Created on Sat Mar 17 09:29:39 2018
 # spaces.
 #
 # Difficulty: 1/5
+def letter_count(str):
+    dict = {}
+    
+    for char in str:
+        if char != ' ':
+            if char not in dict:
+                dict[char] = 1
+            else:
+                dict[char] += 1
+         
+    return dict
+print(letter_count('abcadec'))
+
 
 def letter_count(str):
     h = {}
@@ -27,3 +40,4 @@ print(letter_count('hello') == {'h': 1, 'e': 1, 'l': 2, 'o': 1})
 print(letter_count("cats are fun") == {'a': 2, 'c': 1,\
       'e': 1,'f': 1, 'n': 1, 's': 1, 'r': 1, 'u': 1, 't': 1})
 print("=========xxx=============")
+
