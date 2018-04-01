@@ -8,15 +8,15 @@ Created on Sat Mar 24 15:12:11 2018
 
 def third_num(num):
     
-    i, ii, iii = 0, 0, 0
+    i, ii, iii = None, None, None
     for x in range(len(num)):
-        if i == 0 or num[x] > i:
+        if i == None or num[x] > i:
             iii, ii, i = ii, i, num[x]
             
-        elif ii == 0 or num[x] > ii:
+        elif ii == None or num[x] > ii:
             iii, ii = ii, num[x]
         
-        elif iii == 0 or num[x] > iii:
+        elif iii == None or num[x] > iii:
             iii = num[x]
         
     return iii
