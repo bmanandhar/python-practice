@@ -37,7 +37,7 @@ print(no_repeats(1987, 2018) == [1987, 2013, 2014, 2015, 2016, 2017, 2018])
 #----------------------------------
 
 #no_repeats using set and list
-def no_repeats(year_start, year_end):
+def no_repeats(year_start, year_end): #main function
 
     years = []
 
