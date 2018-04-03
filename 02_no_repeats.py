@@ -10,28 +10,29 @@ Created on Sat Mar 17 09:27:34 2018
 
 # no_repeats using a helper function :
 
-def dup(num_list): #helper function
+def not_duplicate(arr):
     
-    counter = 0 #counter to count if elements repeat    
-    chk_list = [] #stores elements for checking occurances
-
-    for i in num_list:
+    chk_list = []
+    
+    for i in arr:
         if i not in chk_list:
             chk_list.append(i)
-        else:
-            counter += 1
-    return len(chk_list) == len(num_list) #returns True if it has no repeated digit
-        
-def no_repeats(start, end): #main function
+            
+    return len(chk_list) == len(arr)
 
-    no_repeats = [] #accumulates items having no repeat
+#main function
+
+def no_repeats(start, end):
     
-    for i in range(start, end + 1): #takes each item from start to end
-        year_list = list(str(i))
-        if dup(year_list): #sends each item to helper function for checing
+    no_repeats = []
+    
+    for i in range(start, end + 1):
+        split_into_list = list(str(i))
+        if not_duplicate(split_into_list):
             no_repeats.append(i)
+            
     return no_repeats
-
+        
 print(no_repeats(1987, 2018) == [1987, 2013, 2014, 2015, 2016, 2017, 2018])
 # should return:
 # [1987, 2013, 2014, 2015, 2016, 2017, 2018]
@@ -39,6 +40,7 @@ print(no_repeats(1987, 2018) == [1987, 2013, 2014, 2015, 2016, 2017, 2018])
 #----------------------------------
 
 #no_repeats using set and list
+
 def no_repeats(year_start, year_end): #main function
 
     years = []
