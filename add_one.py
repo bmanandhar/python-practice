@@ -15,7 +15,7 @@ Write a python program returns as follows:
 
 def add_one(array):
     carry = 1
-    #iterates from the end of array
+    #iterates from the end of array back
     for i in range(len(array) -1, -1, -1):
         total = array[i] + carry
         if total % 10 == 0:
