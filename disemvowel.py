@@ -18,7 +18,7 @@ def disemvowel(text):
             
         i += 1
     return x
-print(disemvowel('America'))
+print(disemvowel('America') == "mrc")
 
 """ for loop"""
 
@@ -29,4 +29,4 @@ def disemvowel(text):
         if i not in 'aeiou':
             x += i
     return x
-print(disemvowel('United States of America'))
+print(disemvowel('United States of America') == "")

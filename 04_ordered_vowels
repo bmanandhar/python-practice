@@ -15,6 +15,7 @@ def ordered_vowel_words(str):
 			ordered_words += word + " "
 	return ordered_words.strip()
 
+#helper function
 def ordered_vowel_word(word):
 	vowels = 'aeiou'
 	last_vowel = ''

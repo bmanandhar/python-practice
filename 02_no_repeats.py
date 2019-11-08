@@ -7,8 +7,23 @@ Created on Sat Mar 17 09:27:34 2018
 """
 
 # 02 No Repeats Years
-
+# This function returns the years between start & end, inclusive 
+# that does not have repeated numbers.
 # no_repeats using a helper function :
+#main function
+
+def no_repeats(start, end):
+    
+    no_repeats = []
+    
+    for year in range(start, end + 1):
+        split_into_list = list(str(year))
+        if not_duplicate(split_into_list):
+            no_repeats.append(year)
+            
+    return no_repeats
+
+#helper function
 
 def not_duplicate(arr):
     
@@ -19,19 +34,6 @@ def not_duplicate(arr):
             chk_list.append(i)
             
     return len(chk_list) == len(arr)
-
-#main function
-
-def no_repeats(start, end):
-    
-    no_repeats = []
-    
-    for i in range(start, end + 1):
-        split_into_list = list(str(i))
-        if not_duplicate(split_into_list):
-            no_repeats.append(i)
-            
-    return no_repeats
         
 print(no_repeats(1987, 2018) == [1987, 2013, 2014, 2015, 2016, 2017, 2018])
 # should return:

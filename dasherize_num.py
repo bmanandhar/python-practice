@@ -25,4 +25,10 @@ def dash(n):
         result += x[i]
 
     return result
-print(dash(3370))
+print(dash(3370) == "3-3-7-0") #True
+print(dash(8423) == "842-3") #True
+print(dash(1423) == "1-42-3") #True
+print(dash(57629) == "5-7-62-9") #True
+
+
+
